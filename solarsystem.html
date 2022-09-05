@@ -1,0 +1,182 @@
+<html>
+    <head>
+        <title>s sys</title>
+        <style>
+            .heading{
+                color: white;
+                background: linear-gradient(to right,gray,rgb(151, 22, 22));
+                padding: 10px;
+                font-family: 'Times New Roman', Times, serif;
+                font-weight: bold;
+            }
+            body{
+                background-color: black;
+                border-style: double;
+                border-color: white;
+            }
+            *{
+                margin: 0;
+            }
+            .sun{
+                background: linear-gradient(to bottom,yellow,rgb(234, 82, 17));
+                height: 60px;
+                width: 60px;
+                border-radius: 50%;
+                margin-left: 570px;
+                margin-top: 250px;
+                color: white;
+            }
+            .mercury{
+                background: linear-gradient(to bottom,rgb(121, 121, 111),rgb(0, 0, 0));
+                height: 10px;
+                width: 10px;
+                border-radius: 50%;
+                margin-left: 597px;
+                margin-top: -35px;
+                color: white;
+                font-size: 8px;
+                transform: translate(50%,50%);
+                animation: orbit1 2s linear infinite;
+            }
+            @keyframes orbit1
+            {
+                from{transform:rotate(0deg)translateX(40px)rotate(0deg);}
+                to{transform: rotate(360deg)translateX(40px)rotate(-360deg);}
+            }
+            .venus{
+                background: linear-gradient(to bottom,rgb(88, 58, 43),rgb(56, 31, 21));
+                height: 15px;
+                width: 15px;
+                border-radius: 50%;
+                margin-left: 595px;
+                margin-right: -50px;
+                margin-top: -10px;
+                color: white;
+                font-size: 8px;
+                transform: translate(-50%,-50%);
+                animation: orbit2 3s linear infinite;
+            }
+            @keyframes orbit2
+            {
+                from{transform:rotate(0deg)translateX(55px)rotate(0deg);}
+                to{transform: rotate(360deg)translateX(55px)rotate(-360deg);}
+            }
+            .earth{
+                background: linear-gradient(to bottom,rgb(19, 16, 179),rgb(10, 144, 28),blue);
+                height: 20px;
+                width: 20px;
+                border-radius: 50%;
+                margin-left: 590px;
+                margin-right: 100px;
+                margin-top: -20px;
+                color: white;
+                font-size: 10px;
+                transform: translate(-50%,-50%);
+                animation: orbit3 4s linear infinite;
+            }
+            @keyframes orbit3
+            {
+                from{transform:rotate(0deg)translateX(80px)rotate(0deg);}
+                to{transform: rotate(360deg)translateX(80px)rotate(-360deg);}
+            }
+            .mars{
+                background: linear-gradient(to bottom,rgb(95, 21, 21),rgb(70, 12, 12));
+                height: 20px;
+                width: 20px;
+                border-radius: 50%;
+                margin-left: 590px;
+                margin-top: -19px;
+                color: white;
+                font-size: 10px;
+                transform: translate(-50%,-50%);
+                animation: orbit4 6s linear infinite;
+            }
+            @keyframes orbit4
+            {
+                from{transform:rotate(0deg)translateX(110px)rotate(0deg);}
+                to{transform: rotate(360deg)translateX(110px)rotate(-360deg);}
+            }
+            .jupiter{
+                background: linear-gradient(to bottom,rgb(118, 107, 101),rgb(56, 31, 21),gray,brown,gray,brown);
+                height: 40px;
+                width: 40px;
+                border-radius: 50%;
+                margin-left: 580px;
+                margin-right: 100px;
+                margin-top: -40px;
+                color: white;
+                transform: translate(-50%,-50%);
+                animation: orbit5 12s linear infinite;
+            }
+            @keyframes orbit5
+            {
+                from{transform:rotate(0deg)translateX(150px)rotate(0deg);}
+                to{transform: rotate(360deg)translateX(150px)rotate(-360deg);}
+            }
+            .saturn{
+                background: linear-gradient(to bottom,rgb(57, 57, 65),rgb(28, 28, 34));
+                height: 30px;
+                width: 30px;
+                border-radius: 50%;
+                margin-left: 585px;
+                margin-top: -27px;
+                color: white;
+                font-size: 10px;
+                transform: translate(-50%,-50%);
+                animation: orbit6 26s linear infinite;
+            }
+            @keyframes orbit6
+            {
+                from{transform:rotate(0deg)translateX(190px)rotate(0deg);}
+                to{transform: rotate(360deg)translateX(190px)rotate(-360deg);}
+            }
+            .uranus{
+                background: linear-gradient(to bottom,rgb(92, 92, 201),rgb(44, 108, 44));
+                height: 20px;
+                width: 20px;
+                border-radius: 50%;
+                margin-left: 590px;
+                margin-top: -25px;
+                color: white;
+                font-size: 10px;
+                transform: translate(-50%,-50%);
+                animation: orbit7 52s linear infinite;
+            }
+            @keyframes orbit7
+            {
+                from{transform:rotate(0deg)translateX(230px)rotate(0deg);}
+                to{transform: rotate(360deg)translateX(230px)rotate(-360deg);}
+            }
+            .neptune{
+                background: linear-gradient(to bottom,blue,rgb(111, 111, 191));
+                height: 20px;
+                width: 20px;
+                border-radius: 50%;
+                margin-left: 590px;
+                margin-top: -20px;
+                color: white;
+                font-size: 10px;
+                transform: translate(-50%,-50%);
+                animation: orbit8 104s linear infinite;
+            }
+            @keyframes orbit8
+            {
+                from{transform:rotate(0deg)translateX(260px)rotate(0deg);}
+                to{transform: rotate(360deg)translateX(260px)rotate(-360deg);}
+            }
+        </style>
+    </head>
+    <body>
+        <div class="heading">SOLAR SYSTEM</div>
+        <div class="sun">Sun</div>
+        <div class="mercury">Mercury</div>
+        <div class="venus">Venus</div>
+        <div class="earth">Earth</div>
+        <div class="jupiter">Jupiter</div>
+        <div class="mars">Mars</div>
+        <div class="saturn">Saturn</div>
+        <div class="uranus">Uranus</div>
+        <div class="neptune">Neptune</div>
+
+    </body>
+</html>
